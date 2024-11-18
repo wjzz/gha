@@ -17,3 +17,9 @@ jobs:
       - uses: actions/github-script@v7
         with:
           script: console.log(context.issue)
+  comment2:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/github-script@v7
+        with:
+          script: console.log(context)
